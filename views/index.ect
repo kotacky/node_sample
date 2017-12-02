@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Sample Page</title>
+    </head>
+    <body>
+        <table class='table table-condensed'>
+            <thead>
+                <tr>
+                    <td>名前</td>
+                    <td>電話番号</td>
+                    <td>作成日時</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% for doc in @docs: %>
+                <tr>
+                    <td><%= doc.name  %></td>
+                    <td><%= doc.tel  %></td>
+                    <td><%= @moment(doc.created).format('MM/DD HH:mm')  %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </body>
+</html>
