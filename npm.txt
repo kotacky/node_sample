@@ -1,5 +1,11 @@
+cd node_sample
 npm install ect
 npm install express --save-dev
 npm install mongodb --save-dev
 npm install moment --save-dev
 node app.js
+
+mongo
+use sample
+db.sample_collection.find();
+db.sample_collection.insert({name: '', tel: ''});
