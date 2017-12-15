@@ -5,6 +5,8 @@ npm install mongodb --save-dev
 npm install moment --save-dev
 node app.js
 
+mongod --dbpath c:\mongodb\data --logpath c:\mongodb\logs\mongodb.log
+
 mongo
 use sample
 db.sample_collection.find();
