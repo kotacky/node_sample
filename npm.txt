@@ -12,3 +12,4 @@ use sample
 db.sample_collection.find();
 db.sample_collection.insert({name: '', tel: ''});
 
+# dummy
